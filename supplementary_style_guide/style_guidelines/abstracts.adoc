@@ -1,0 +1,41 @@
+[[abstracts]]
+= Abstracts and short descriptions
+
+////
+Carried over from CCS discussion:
+
+We need to:
+
+Determine where in a doc the abstract goes.
+Define short description.
+Differentiate between an abstract and a short description at the module level or adopt a single term if they are both the same.
+Provide style guidelines with examples
+Update existing topics to reflect changes
+////
+
+
+An _abstract_ is a short introductory paragraph that provides an overview of a module or assembly.
+Apart from summarizing the contents of a module or assembly for the readers, the abstract is also indexed by search engines.
+A well-written abstract increases the likelihood of your content appearing at the top of a list of results in a web search.
+
+//Tips for writing abstarcts
+The abstract must immediately follow the title of the module or assembly.
+According to Pantheon 2 requirements, abstracts must be designated using the `[role="_abstract"]` tag.
+Do not put a blank line between the `[role="_abstract"]` tag and the first line of the abstract.
+In assemblies and procedures, the abstract should include the intended user persona.
+
+.Example Asciidoc: Abstract of an assembly
+//TODO: add product-name variables
+[source,asciidoc]
+----
+[role="_abstract"]
+As a developer of applications and services, you can use Red Hat OpenShift Streams for Apache Kafka to create and set up Kafka instances and connect your applications and services to these instances. OpenShift Streams for Apache Kafka is a managed cloud service that enables you to add Kafka data-streaming functionality in your applications without having to install, configure, run, and maintain your own Kafka clusters.
+----
+
+.Example Asciidoc: Abstract of a concept module
+//TODO: add product-name variables
+[source,asciidoc]
+----
+[role="_abstract"]
+A virtual machine (VM) core dump contains detailed information about the state of a VM at any given time. This information, essentially a snapshot of the VM, can help you detect problems if a VM malfunctions or shuts down suddenly.
+----
